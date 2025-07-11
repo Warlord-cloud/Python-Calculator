@@ -8,7 +8,7 @@ A simple Python calculator that supports:
 
 ## How to Run
 1. Open [Replit](https://replit.com/languages/python3) or another Python 3 compiler
-2. Copy the code from `The Code` into the editor
+2. Copy the code from `The code` into the editor
 3. Run the program and follow the prompts
 
 ## Features
