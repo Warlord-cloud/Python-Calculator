@@ -1,0 +1,34 @@
+while True:
+    try:
+        ab = float(input("number one: "))
+        ac = float(input("number two: "))
+        op = input("'+', '-', '*', '/': ")
+
+        if op == "+":
+            res = ab + ac
+        elif op == "-":
+            res = ab - ac
+        elif op == "*":
+            res = ab * ac
+        elif op == "/":
+            if ac != 0:
+                res = ab / ac
+            else:
+                res = "Error: division by zero is always undefined"
+        else:
+            res = "Invalid operation"
+
+        if isinstance(res, float):
+            if res == int(res):
+                print("it's:", int(res))
+            else:
+                print("it's:", round(res, 2))
+        else:
+            print("it's", res)
+
+        again = input("wanna go again? (yes/no): ").lower()
+        if again not in ["yes", "yah", "ok", "y", "sure", "yup", "ye"]:
+            print("peace out! ✌️")
+            break
+    except ValueError:
+        print("Yo, that’s not a number. Try again.")
